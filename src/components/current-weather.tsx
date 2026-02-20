@@ -1,5 +1,4 @@
 import type { GeocodingResponse, WeatherData } from "@/API/types";
-import React from "react";
 import { Card, CardContent } from "./ui/card";
 import { ArrowDown, ArrowUp, Droplet, Wind } from "lucide-react";
 import { useEffect, useState } from "react";
@@ -12,7 +11,7 @@ interface CurrentWeatherProps {
 const CurrentWeather = ({ data, locationName }: CurrentWeatherProps) => {
   const {
     weather: [curentWeather],
-    main: { temp, feels_like, temp_min, temp_max, humidity, timezone },
+    main: { temp, feels_like, temp_min, temp_max, humidity },
     wind: { speed },
   } = data;
 

@@ -1,4 +1,4 @@
-import React from "react";
+
 import type { WeatherData } from "@/API/types";
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 import { Sunrise, Sunset, Compass, Gauge } from "lucide-react";

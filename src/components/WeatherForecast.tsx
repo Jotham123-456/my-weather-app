@@ -1,4 +1,4 @@
-import React from "react";
+
 import type { ForecastData } from "@/API/types";
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 import { ArrowDown, ArrowUp, Droplets, Wind } from "lucide-react";

@@ -9,11 +9,11 @@ import {
   useWeatherQuery,
 } from "@/hooks/use-weather";
 import { AlertTriangle, MapPin, RefreshCcw } from "lucide-react";
-import React from "react";
 import CurrentWeather from "@/components/current-weather";
 import HourlyTemp from "@/components/hourly-temp";
 import WeatherDetails from "@/components/WeatherDetails";
 import WeatherForecast from "@/components/WeatherForecast";
+import type { GeocodingResponse } from "@/API/types";
 
 const WeatherDashboard = () => {
   const {
@@ -74,7 +74,7 @@ const WeatherDashboard = () => {
     );
   }
 
-  const locationName = locationQuery.data?.[0] || "Unknown Location";
+  const locationName: GeocodingResponse | undefined = locationQuery.data?.[0];
 
   if (weatherQuery.error) {
     return (

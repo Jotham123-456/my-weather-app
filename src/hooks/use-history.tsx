@@ -1,4 +1,4 @@
-import React from "react";
+
 import useLocalStorage from "./use-locale-storage";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 interface SearchHistoryItem {

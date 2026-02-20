@@ -1,4 +1,4 @@
-import React from "react";
+
 import { useParams, useSearchParams } from "react-router-dom";
 import { useWeatherQuery, useForecastQuery } from "@/hooks/use-weather";
 // import { Alert, AlertDescription, AlertTriangle } from "@/components/ui/alert";

@@ -1,14 +1,5 @@
-import React from "react";
 import type { ForecastData } from "@/API/types";
-import {
-  Card,
-  CardAction,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "./ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 
 import {
   Line,
