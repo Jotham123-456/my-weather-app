@@ -13,7 +13,6 @@ import CurrentWeather from "@/components/current-weather";
 import HourlyTemp from "@/components/hourly-temp";
 import WeatherDetails from "@/components/WeatherDetails";
 import WeatherForecast from "@/components/WeatherForecast";
-import type { GeocodingResponse } from "@/API/types";
 
 const WeatherDashboard = () => {
   const {
@@ -74,7 +73,7 @@ const WeatherDashboard = () => {
     );
   }
 
-  const locationName: GeocodingResponse | undefined = locationQuery.data?.[0];
+  const locationName = locationQuery.data?.[0];
 
   if (weatherQuery.error) {
     return (
